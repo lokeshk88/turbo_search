@@ -1,0 +1,12 @@
+<div id="<%= dom_id car %>">
+  <p>
+    <strong>Title:</strong>
+    <%= car.title %>
+  </p>
+
+  <p>
+    <strong>Model:</strong>
+    <%= link_to car.model.filename, car.model if car.model.attached? %>
+  </p>
+
+</div>

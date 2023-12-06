@@ -1,0 +1,16 @@
+<div class="blur__overlay"></div>
+<%= render "shared/header"%>
+<%= render "shared/navbar"%>
+<%= render "shared/section"%>
+<p style="color: green"><%= notice %></p>
+
+<h1>Cars</h1>
+
+<div id="cars">
+  <% @cars.each do |car| %>
+    <%= render car %>
+    <p>
+      <%= link_to "Show this car", car %>
+    </p>
+  <% end %>
+</div>
